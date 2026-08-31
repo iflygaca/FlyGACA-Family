@@ -15,9 +15,9 @@ The independent, bilingual educational ecosystem for Saudi civil aviation — bu
 
 | Repository | Role & Purpose | Technology Stack |
 |:---|:---|:---|
-| **[FlyGACA](https://github.com/ay2m/FlyGACA)** | Main web platform, open regulatory library, flight calculators, and ground school | React 19, TypeScript, Vite, Tailwind/CSS Tokens, Cloud Run / Firebase |
+| **[FlyGACA](https://github.com/ay2m/FlyGACA)** | Main web platform, open regulatory library, flight calculators, and ground school | React 19, TypeScript, Vite, Tailwind/CSS Tokens, Vercel / Node.js API |
 | **[FlyGACA-ios](https://github.com/ay2m/FlyGACA-ios)** | Flagship all-in-one native iOS app (Academics, Calculators, AI Instructor, Regulations) | Swift 5.9+, SwiftUI, SwiftData, SPM (`FlyGACAKit`), iOS 17+ |
-| **[Captain-Adel](https://github.com/ay2m/Captain-Adel)** | AI flight instructor backend with cite-or-refuse GACAR grounding and SSE streaming | Python, FastAPI, OpenAI / Vertex AI, AdelCore Swift SDK |
+| **[Captain-Adel](https://github.com/ay2m/Captain-Adel)** | AI flight instructor backend with cite-or-refuse GACAR grounding and SSE streaming | Node.js, Express, Gemini / ALLaM, AdelCore Swift SDK |
 | **[Office](https://github.com/ay2m/Office)** | Operations, business strategy, governance, KSA legal/compliance, brand assets | Markdown OS, Business Operations, Curriculum |
 
 ---
