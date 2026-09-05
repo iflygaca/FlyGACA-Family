@@ -38,10 +38,10 @@
 
 | Repository | Role & Responsibilities | Core Technology Stack |
 |:---|:---|:---|
-| **[FlyGACA](https://github.com/iflygaca/FlyGACA)** | Main web platform, open regulatory library (74 GACAR Parts), 55+ flight tools, and pilot ground school | React 19, TypeScript Strict, Vite, Tailwind CSS, Express 5, Cloud Run |
-| **[FlyGACA-ios](https://github.com/iflygaca/FlyGACA-ios)** | Flagship all-in-one native iOS application (Academics, Calculators, AI Instructor, Regulations) | Swift 5.9+, SwiftUI, SwiftData, SPM (`FlyGACAKit`), iOS 17+ |
-| **[Captain-Adel](https://github.com/iflygaca/Captain-Adel)** | AI flight instructor service with cite-or-refuse GACAR grounding and SSE streaming | Node.js, Express, Gemini RAG, ALLaM, AdelCore SDK, Python |
-| **[Office](https://github.com/iflygaca/Office)** | Operations, business strategy, governance, KSA legal/compliance, and headless PDF pipeline | Markdown OS, ZATCA UBL 2.1, Headless Chromium, Cairo/Inter Fonts |
+| **[FlyGACA](https://github.com/ay2m/FlyGACA)** | Main web platform, open regulatory library (74 GACAR Parts), 55+ flight tools, and pilot ground school | React 19, TypeScript Strict, Vite, Tailwind CSS, Express 5, Cloud Run |
+| **[FlyGACA-ios](https://github.com/ay2m/FlyGACA-ios)** | Flagship all-in-one native iOS application (Academics, Calculators, AI Instructor, Regulations) | Swift 5.9+, SwiftUI, SwiftData, SPM (`FlyGACAKit`), iOS 17+ |
+| **[Captain-Adel](https://github.com/ay2m/Captain-Adel)** | AI flight instructor service with cite-or-refuse GACAR grounding and SSE streaming | Node.js, Express, Gemini RAG, ALLaM, AdelCore SDK, Python |
+| **[Office](https://github.com/ay2m/Office)** | Operations, business strategy, governance, KSA legal/compliance, and headless PDF pipeline | Markdown OS, ZATCA UBL 2.1, Headless Chromium, Cairo/Inter Fonts |
 
 ---
 
@@ -63,9 +63,9 @@ All AI assets, datasets, and spaces on **Hugging Face (`@flygaca`)** are directl
 
 | Platform Asset | Asset Type | Linked GitHub Source | Purpose |
 |:---|:---|:---|:---|
-| **Space:** [`flygaca/captain-adel`](https://huggingface.co/spaces/flygaca/captain-adel) | Gradio Web Demo | [`Captain-Adel/app.py`](https://github.com/iflygaca/Captain-Adel/blob/main/app.py) | Public interactive flight instructor space |
-| **Model:** [`flygaca/CaptAdel`](https://huggingface.co/flygaca/CaptAdel) | Embedding Model | [`Captain-Adel/hf-phase-0/`](https://github.com/iflygaca/Captain-Adel) | Bilingual GACAR cross-lingual retrieval embedder |
-| **Dataset:** [`flygaca/gacar-assistant-evals`](https://huggingface.co/datasets/flygaca/gacar-assistant-evals) | Evaluation Dataset | [`Captain-Adel/evals/`](https://github.com/iflygaca/Captain-Adel/tree/main/evals) | 138 bilingual GACAR regulatory benchmark cases |
+| **Space:** [`flygaca/captain-adel`](https://huggingface.co/spaces/flygaca/captain-adel) | Gradio Web Demo | [`Captain-Adel/app.py`](https://github.com/ay2m/Captain-Adel/blob/main/app.py) | Public interactive flight instructor space |
+| **Model:** [`flygaca/CaptAdel`](https://huggingface.co/flygaca/CaptAdel) | Embedding Model | [`Captain-Adel/hf-phase-0/`](https://github.com/ay2m/Captain-Adel) | Bilingual GACAR cross-lingual retrieval embedder |
+| **Dataset:** [`flygaca/gacar-assistant-evals`](https://huggingface.co/datasets/flygaca/gacar-assistant-evals) | Evaluation Dataset | [`Captain-Adel/evals/`](https://github.com/ay2m/Captain-Adel/tree/main/evals) | 138 bilingual GACAR regulatory benchmark cases |
 
 ---
 
