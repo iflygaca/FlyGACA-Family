@@ -28,20 +28,25 @@
 ## 🧭 Ecosystem Architecture & Repositories
 
 ```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                           FlyGACA Ecosystem                             │
-├───────────────────┬───────────────────┬───────────────────┬─────────────┤
-│   🌐 FlyGACA      │  📱 FlyGACA-ios   │  🤖 Captain-Adel  │  🏢 Office  │
-│  (Web Platform)   │   (Unified iOS)   │    (AI Backend)   │ (Operations)│
-└───────────────────┴───────────────────┴───────────────────┴─────────────┘
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│                                  FlyGACA Ecosystem                                     │
+├───────────────────┬───────────────────────┬───────────────────┬─────────────────────────┤
+│   🌐 FlyGACA      │      📱 iOS           │  🤖 Captain-Adel  │        🏢 Office         │
+│  (Web Platform)   │  (Unified iOS home)   │    (AI Backend)   │      (Operations)        │
+└───────────────────┴───────────────────────┴───────────────────┴─────────────────────────┘
 ```
 
 | Repository | Role & Responsibilities | Core Technology Stack |
 |:---|:---|:---|
 | **[FlyGACA](https://github.com/iflygaca/FlyGACA)** | Main web platform, open regulatory library (74 GACAR Parts), 55+ flight tools, and pilot ground school | React 19, TypeScript Strict, Vite, Tailwind CSS, Express 5, Cloud Run |
-| **[FlyGACA-ios](https://github.com/iflygaca/FlyGACA-ios)** | Flagship all-in-one native iOS application (Academics, Calculators, AI Instructor, Regulations) | Swift 5.9+, SwiftUI, SwiftData, SPM (`FlyGACAKit`), iOS 17+ |
+| **[iOS](https://github.com/iflygaca/ios)** | Unified native iOS home. Merges the full history of `FlyGACA-ios` (study apps — ELPT, AIP, on shared `FlyGACAKit`) and `Captain-Adel-iOS` (the offline GACAR co-pilot app) as `apps/flygaca-ios/` and `apps/captain-adel-ios/` — the first step toward one flagship app spanning Academics, Calculators, AI Instructor, and Regulations. Currently a side-by-side merge; deep integration into one app target is tracked follow-up (see the repo's `apps/README.md`) | Swift 5.9+, SwiftUI, SwiftData, SPM (`FlyGACAKit`), iOS 17+ |
 | **[Captain-Adel](https://github.com/iflygaca/Captain-Adel)** | AI flight instructor service with cite-or-refuse GACAR grounding and SSE streaming | Node.js, Express, Gemini RAG, ALLaM, AdelCore SDK, Python |
 | **[Office](https://github.com/iflygaca/Office)** | Operations, business strategy, governance, KSA legal/compliance, and headless PDF pipeline | Markdown OS, ZATCA UBL 2.1, Headless Chromium, Cairo/Inter Fonts |
+
+**Legacy iOS repos (still live, not archived):** [`FlyGACA-ios`](https://github.com/iflygaca/FlyGACA-ios)
+and [`Captain-Adel-iOS`](https://github.com/iflygaca/Captain-Adel-iOS) each carry a pointer to
+`iflygaca/ios` and keep running their own CI/TestFlight pipelines independently. New iOS work
+should generally start from `iflygaca/ios`.
 
 ---
 
