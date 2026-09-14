@@ -96,9 +96,10 @@ The **family contract** is the single source of truth for cross-repository align
 ```
 
 ### Why it matters for developers:
-- **`entity` Block** (Office owns; FlyGACA, Captain-Adel, iOS mirror): Legal facts (name, founder, tax ID, HQ), support channels, regulatory disclaimers. Edit only in Office; run `node tools/contracts/stamp-manifest.mjs` to re-hash.
-- **`chat` Block** (FlyGACA owns; Captain-Adel, iOS mirror): The streaming SSE shape and citation schema both brains must honor. A breaking change here means both backends and all native apps need updating in concert.
+- **`entity` Block** (Office owns; FlyGACA, Captain-Adel mirror): Legal facts (name, founder, tax ID, HQ), support channels, regulatory disclaimers. Edit only in Office; run `node tools/contracts/stamp-manifest.mjs` to re-hash.
+- **`chat` Block** (FlyGACA owns; Captain-Adel mirrors): The streaming SSE shape and citation schema both brains must honor. A breaking change here means both backends need updating in concert.
 - **`repos` Block** (Office owns): Canonical repository mapping and URLs.
+- **`iflygaca/ios` doesn't carry a copy of this file.** Only Office, FlyGACA and Captain-Adel do — the three-repo byte-identical set both `stamp-manifest.mjs` and each repo's own CLAUDE.md describe. Don't add a fourth copy without updating those too.
 
 ---
 
