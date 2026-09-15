@@ -160,6 +160,7 @@ Software components across the FlyGACA family are published under the **MIT Lice
 
 [Website](https://flygaca.com) · [Captain Adel AI](https://captadel.com) · [Hugging Face Hub](https://huggingface.co/flygaca) · [Discussions](https://github.com/orgs/iflygaca/discussions)
 
-<sub>🇸🇦 صنع في المملكة العربية السعودية · Crafted with excellence in Saudi Arabia</sub>
+<sub dir="rtl">🇸🇦 صنع في المملكة العربية السعودية</sub><br />
+<sub>Crafted with excellence in Saudi Arabia</sub>
 
 </div>
