@@ -1,164 +1,294 @@
 <div align="center">
 
-# 🦅 **FlyGACA Family**
-### The Independent Bilingual Educational Ecosystem for Saudi Civil Aviation
-#### منظومة الطيران المدني السعودي المتكاملة · الويب · الآيفون · الذكاء الاصطناعي · العمليات
+# 🦅 **The Fly GACA Family**
+### One ecosystem for studying Saudi civil aviation: web, iOS, AI and operations
+#### منظومة فلاي جاكا · الويب · الآيفون · الذكاء الاصطناعي · العمليات
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Made%20in-Saudi%20Arabia-006C35?style=for-the-badge&labelColor=0a0e12" alt="Saudi Arabia" />
-  <img src="https://img.shields.io/badge/Bilingual-EN%20%E2%87%84%20AR-C8A04A?style=for-the-badge&labelColor=0a0e12" alt="Bilingual" />
-  <img src="https://img.shields.io/badge/GACAR-74%20Parts%20Complete-00e5ff?style=for-the-badge&labelColor=0a0e12" alt="74 GACAR Parts" />
-  <img src="https://img.shields.io/badge/Calculators-55%2B%20Flight%20Tools-FFD21E?style=for-the-badge&labelColor=0a0e12" alt="55+ Calculators" />
-  <a href="https://huggingface.co/flygaca"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-%40flygaca-FF9D00?style=for-the-badge&labelColor=0a0e12" alt="Hugging Face" /></a>
-  <img src="https://img.shields.io/badge/Native%20iOS-Swift%205.9%2B%20%7C%20FSRS--6-F05138?style=for-the-badge&logo=swift&logoColor=white&labelColor=0a0e12" alt="Swift 5.9+ FSRS-6" />
-  <img src="https://img.shields.io/badge/Cloud%20Run-me--central2%20(KSA)-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white&labelColor=0a0e12" alt="Cloud Run me-central2" />
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge&labelColor=0a0e12" alt="License MIT" />
+  <img src="https://img.shields.io/badge/Made%20in-Saudi%20Arabia-006C35?style=for-the-badge&labelColor=0a0e12" alt="Made in Saudi Arabia" />
+  <img src="https://img.shields.io/badge/Bilingual-EN%20%E2%87%84%20AR-C8A04A?style=for-the-badge&labelColor=0a0e12" alt="Bilingual EN and AR" />
+  <img src="https://img.shields.io/badge/GACAR-74%20Parts-00e5ff?style=for-the-badge&labelColor=0a0e12" alt="74 GACAR Parts" />
+  <img src="https://img.shields.io/badge/Flight%20Tools-55%2B-FFD21E?style=for-the-badge&labelColor=0a0e12" alt="55+ flight tools" />
+  <img src="https://img.shields.io/badge/Hosting-me--central2%20Dammam-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white&labelColor=0a0e12" alt="Hosting in me-central2 Dammam" />
+  <a href="https://huggingface.co/flygaca"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-%40flygaca-FF9D00?style=for-the-badge&labelColor=0a0e12" alt="Hugging Face @flygaca" /></a>
 </p>
 
-[**🌐 Web Platform (flygaca.com)**](https://flygaca.com) · [**🤖 Captain Adel AI (captadel.com)**](https://captadel.com) · [**🤗 Hugging Face Organization**](https://huggingface.co/flygaca) · [**📱 iOS Suite**](https://github.com/iflygaca/ios) · [**🏢 Operations**](https://github.com/iflygaca/Office)
+[**🌐 flygaca.com**](https://flygaca.com) · [**🤖 captadel.com**](https://captadel.com) · [**📱 iOS**](https://github.com/iflygaca/ios) · [**🏢 Office**](https://github.com/iflygaca/Office) · [**🤗 Hugging Face**](https://huggingface.co/flygaca)
 
 </div>
 
 ---
 
 > [!IMPORTANT]
-> **Independent Educational Ecosystem.**
-> Fly GACA is an independent educational initiative and is not affiliated with, endorsed by, or operated by the General Authority of Civil Aviation (GACA) or the Government of Saudi Arabia. The authoritative source for all civil aviation regulations is always [gaca.gov.sa](https://gaca.gov.sa).
-> 
-> **منظومة تعليمية ملاحية مستقلة:**
-> فلاي جاكا هي منظومة تعليمية مستقلة للطيران المدني، غير تابعة للهيئة العامة للطيران المدني (GACA) ولا معتمدة منها ولا للحكومة السعودية. المصدر الرسمي والمعتمد لجميع لوائح وأنظمة الطيران المدني هو موقع الهيئة الرسمي دائمًا ([gaca.gov.sa](https://gaca.gov.sa)).
+> **An independent educational ecosystem.** Fly GACA is not affiliated with, endorsed by, or
+> operated by the General Authority of Civil Aviation (GACA) or the Government of Saudi Arabia.
+> Nothing here is for operational use in flight. For any regulation, the current official text
+> at [gaca.gov.sa](https://gaca.gov.sa) is what counts.
+>
+> <p dir="rtl"><strong>منظومة تعليمية مستقلة.</strong> فلاي جاكا غير تابعة للهيئة العامة للطيران المدني (GACA) ولا معتمدة منها ولا تديرها، ولا علاقة لها بالحكومة السعودية. لا شيء هنا مخصص للاستخدام التشغيلي أثناء الطيران. المرجع الرسمي لأي لائحة هو نصها الحالي على <a href="https://gaca.gov.sa">gaca.gov.sa</a>.</p>
 
 ---
 
-## ⚡ Ecosystem Cockpit Telemetry
+## 📑 Contents
 
-```asciidoc
-========================================================================================
-  FLYGACA ECOSYSTEM TELEMETRY & MULTI-REPO ARCHITECTURE
-========================================================================================
-  [ORGANIZATION]        iflygaca (github.com/iflygaca)
-  [CORE DOCTRINE]       Truth-First · Evidence-Based Grounding · Cite-or-Refuse
-  [WEB MONOREPO]        React 19 + TypeScript Strict + Vite 6 + Cloud Run (me-central2)
-  [UNIFIED iOS]         Swift 5.9+ + SwiftUI (iOS 17+) + FSRS-6 + 100% FL380 Offline
-  [AI RAG ENGINE]       BM25 Lexical (offline-capable floor) + BGE-M3 Dense/Rerank (fuses
-                        in only when configured — not a fixed guarantee)
-  [HUGGING FACE HUB]    @flygaca (Space: Gradio 6 · Model: CaptAdel · Dataset: 174 Evals)
-  [REGULATORY SCOPE]    74 GACAR Parts (Parts 1 to 183) · 211 Canonical Source Documents
-  [DATA RESIDENCY]      Storage & compute in me-central2 (Dammam) · chat inference via
-                        Gemini is an open, disclosed exception — see note below
-========================================================================================
+- [At a glance](#-at-a-glance)
+- [The family map](#%EF%B8%8F-the-family-map)
+- [Repository roster](#-repository-roster)
+- [How a learner moves through the family](#-how-a-learner-moves-through-the-family)
+- [The family contract](#-the-family-contract)
+- [Working across repositories](#-working-across-repositories)
+- [Hugging Face](#-hugging-face)
+- [Data residency and PDPL](#-data-residency-and-pdpl)
+- [Licensing](#-licensing)
+- [عن المنظومة (بالعربية)](#-عن-المنظومة-بالعربية)
+
+---
+
+## ⚡ At a glance
+
+| | |
+| :--- | :--- |
+| **Organisation** | [`github.com/iflygaca`](https://github.com/iflygaca) |
+| **Operating company** | BDA Company International · شركة بدع الدولية (Riyadh) |
+| **Regulatory scope** | All **74** numbered GACAR Parts, plus topical handbooks, aerodromes and VFR charts |
+| **Doctrine** | Cite the exact section or refuse. Never invent a regulation. |
+| **Hosting** | Google Cloud `me-central2` (Dammam) only. Captain Adel's `deploy.sh` refuses any other region. |
+| **Languages** | English and Arabic, with right-to-left layout throughout |
+| **Open item** | Chat inference through Gemini runs outside the Kingdom ([details](#-data-residency-and-pdpl)) |
+
+---
+
+## 🗺️ The family map
+
+```mermaid
+flowchart LR
+    subgraph Learners["👩‍✈️ Learners · instructors · schools"]
+        U((Pilot))
+    end
+
+    subgraph Product["Product surfaces"]
+        WEB["🌐 <b>FlyGACA</b><br/>flygaca.com<br/><i>React 19 · Express 5</i>"]
+        IOS["📱 <b>iOS</b><br/>Study apps + Captain Adel iOS<br/><i>SwiftUI · FlyGACAKit</i>"]
+        ADEL["🤖 <b>Captain-Adel</b><br/>captadel.com<br/><i>Node · Express 5 · RAG</i>"]
+    end
+
+    subgraph Ops["Operations"]
+        OFFICE["🏢 <b>Office</b><br/>Governance · finance · compliance<br/><i>Markdown → branded PDF</i>"]
+    end
+
+    GACA[("📘 gaca.gov.sa<br/>official source")]
+
+    U --> WEB
+    U --> IOS
+    U --> ADEL
+    WEB -- "quiz.json · packs" --> IOS
+    WEB <-. "shared chat contract" .-> ADEL
+    IOS -. "cloud-mode chat" .-> WEB
+    OFFICE -- "entity + roster<br/>(family contract)" --> WEB
+    OFFICE -- "entity + roster" --> ADEL
+    GACA -. "published regulations" .-> WEB
+    GACA -. "published regulations" .-> ADEL
+
+    classDef web fill:#0b3b3a,stroke:#00b3a4,color:#fff;
+    classDef ios fill:#3a1d0b,stroke:#F05138,color:#fff;
+    classDef ai fill:#1d0b3a,stroke:#8E75B2,color:#fff;
+    classDef ops fill:#3a320b,stroke:#C8A04A,color:#fff;
+    class WEB web; class IOS ios; class ADEL ai; class OFFICE ops;
 ```
 
 ---
 
-## 🧭 Repository Roster & Matrix
+## 🧭 Repository roster
 
-The Fly GACA **product family** spans 4 purpose-built repositories, aligned through the
-shared family contract below:
+| | Repository | What it is | Stack | Licence |
+| :---: | :--- | :--- | :--- | :--- |
+| 🌐 | **[FlyGACA](https://github.com/iflygaca/FlyGACA)** | The product: the bilingual web app, its API, the GACAR library, 55+ flight tools and ground school | React 19 · Vite · TypeScript · CSS Modules · Express 5 · PostgreSQL · Cloud Run | MIT |
+| 📱 | **[iOS](https://github.com/iflygaca/ios)** | Native apps. `apps/flygaca-ios` is the `FlyGACAKit` study family; `apps/captain-adel-ios` is the offline GACAR co-pilot | Swift 5.9+ · SwiftUI · SPM · iOS 17+ | MIT (`flygaca-ios`) |
+| 🤖 | **[Captain-Adel](https://github.com/iflygaca/Captain-Adel)** | The standalone AI flight instructor service behind captadel.com. FlyGACA's chat runs its own brain on the same `chat` contract. | Node 20+ · Express 5 · BM25 (+ optional dense/rerank) · Gemini / ALLaM | Proprietary |
+| 🏢 | **[Office](https://github.com/iflygaca/Office)** | Internal operating documents: strategy, governance, legal, finance, KSA compliance, people, brand | Markdown + HTML → A4 PDF (headless Chromium) | Apache 2.0 (own material) |
 
+<details>
+<summary><b>Archived and related repositories</b></summary>
+
+| Repository | Status |
+| :--- | :--- |
+| [`iflygaca/FlyGACA-ios`](https://github.com/iflygaca/FlyGACA-ios) | Merged into `iflygaca/ios` under `apps/flygaca-ios/`, with full history |
+| [`iflygaca/Captain-Adel-iOS`](https://github.com/iflygaca/Captain-Adel-iOS) | Merged into `iflygaca/ios` under `apps/captain-adel-ios/`, with full history |
+| [`iflygaca/FlyGACA-app`](https://github.com/iflygaca/FlyGACA-app) | Archived predecessor of `iflygaca/FlyGACA`. Read-only. |
+| [`iflygaca/awesome-saudi-open-source`](https://github.com/iflygaca/awesome-saudi-open-source) | A community list of Saudi open-source projects. It is not a Fly GACA product and does not take part in the contract below. |
+
+</details>
+
+---
+
+## 🧑‍✈️ How a learner moves through the family
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor P as Student pilot
+    participant W as flygaca.com
+    participant A as Captain Adel
+    participant I as iOS app
+    participant G as gaca.gov.sa
+
+    P->>W: Search the GACAR library
+    W-->>P: Section text + permanent anchor
+    P->>A: "What are the VFR fuel reserves?"
+    A->>A: Retrieve passages (BM25 ± dense)
+    alt Answer is grounded in the corpus
+        A-->>P: Answer with § citation and source link
+    else No supporting passage
+        A-->>P: Polite refusal + pointer to the official source
+    end
+    P->>I: Study the pack offline (spaced repetition)
+    I->>W: Refresh quiz.json when online
+    P->>G: Verify against the current official text
 ```
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                                   FlyGACA Ecosystem                                    │
-├────────────────────┬────────────────────┬────────────────────┬─────────────────────────┤
-│    🌐 FlyGACA      │       📱 iOS       │  🤖 Captain-Adel   │        🏢 Office        │
-│   (Web Platform)   │   (Unified Apps)   │    (AI Backend)    │       (Operations)      │
-└────────────────────┴────────────────────┴────────────────────┴─────────────────────────┘
+
+---
+
+## 🔗 The family contract
+
+`contracts/flygaca-family.json` is committed **byte-identically** to three repositories: Office,
+FlyGACA and Captain-Adel. Each block has exactly one owner, and only that owner edits it:
+
+```mermaid
+flowchart TB
+    C{{"contracts/flygaca-family.json<br/>version · sha"}}
+    C --> E["<b>entity</b><br/>legal name · CR · VAT · address<br/><i>owner: Office</i>"]
+    C --> H["<b>chat</b><br/>request/response fields · tenants<br/><i>owner: FlyGACA</i>"]
+    C --> R["<b>repos</b><br/>the real roster<br/><i>owner: Office</i>"]
+
+    E --> G1["Office · tools/print/check-facts.mjs"]
+    H --> G2["FlyGACA · tests/family-contract.test.ts"]
+    R --> G3["Captain-Adel · test/family-contract.test.js"]
 ```
 
-| Repository | Role & Responsibilities | Key Technologies |
-| :--- | :--- | :--- |
-| **[FlyGACA](https://github.com/iflygaca/FlyGACA)** | Main web platform, open regulatory library (**74 GACAR Parts**), **55+ flight tools**, and ground school. | React 19, Vite 6, TypeScript Strict, Tailwind CSS, Express 5, Cloud Run `me-central2` |
-| **[iOS](https://github.com/iflygaca/ios)** | Unified native iOS home merging **FlyGACA Study Suite** (ELPT, AIP, FSRS-6 scheduler) and **Captain Adel Co-Pilot** (on-device vector search, 18 METAR aerodromes, bilingual cockpit voice). | Swift 5.9+, SwiftUI, SwiftData, SPM (`FlyGACAKit`), iOS 17+, macOS 14+ |
-| **[Captain-Adel](https://github.com/iflygaca/Captain-Adel)** | AI flight instructor service with cite-or-refuse GACAR grounding and streaming SSE response pipeline. | Node.js 20+, Express 5, Gemini 2.5 Flash, ALLaM (KSA), BGE-M3, BM25 |
-| **[Office](https://github.com/iflygaca/Office)** | 12 operating domains: corporate governance, ZATCA Phase 2 Fatoora, Saudi PDPL compliance, and headless PDF pipeline. | Markdown OS, ZATCA UBL 2.1, Headless Chromium, Cairo/Inter Fonts |
+| Block | Owner | Source of truth | Checked by |
+| :--- | :--- | :--- | :--- |
+| `entity` | Office | `01-governance/company-facts.md` | `check-facts.mjs` (also asserts that **no banking data** is in the file) |
+| `chat` | FlyGACA | `server/src/contract.ts` | Both product repos' contract tests. Captain Adel's `/v1/chat` returns a **superset** of these fields. |
+| `repos` | Office | Office's repository table | Each repo's parity test |
+
+**To change it:** edit the owner's copy, bump `version`, re-stamp with
+`node tools/contracts/stamp-manifest.mjs contracts/flygaca-family.json` (in Office), copy the file
+verbatim into the other two repos, and open all three PRs together.
 
 > [!NOTE]
-> **[`awesome-saudi-open-source`](https://github.com/iflygaca/awesome-saudi-open-source)**
-> also lives under the `iflygaca` GitHub org — a general curated list of open-source
-> projects by Saudi developers. It's a separate community initiative, not a Fly GACA
-> product repo: it carries no `flygaca-family.json`, ships nothing to flygaca.com or
-> captadel.com, and isn't part of the contract sync below. Listed here for
-> transparency, not as a fifth family member.
+> `iflygaca/ios` does **not** carry a copy of the contract. The three-repo set is deliberate, so
+> don't add a fourth copy without updating the stamping tool and every repo's `CLAUDE.md`.
 
 ---
 
-## 🔗 The Family Contract: `contracts/flygaca-family.json`
+## 🧠 Working across repositories
 
-The **family contract** is the single source of truth for cross-repository alignment:
+<table>
+<tr>
+<td width="50%" valign="top">
 
-```json
-{
-  "version": "1",
-  "entity": { /* owned by Office */ },
-  "chat": { /* owned by FlyGACA */ },
-  "repos": [ /* owned by Office */ ]
-}
+### Independence first
+Each repository has its own CI, its own release cadence and its own domain.
+
+- **Captain-Adel** retrieval or prompt work stays in `src/brain/` and `evals/`
+- **FlyGACA** UI work stays in `src/`; the API keeps its shape in `server/`
+- **iOS** apps build and ship separately from each other
+- **Office** policy lives in the numbered sections
+
+</td>
+<td width="50%" valign="top">
+
+### When a change spans repos
+1. **Find the owner.** Which repo defines the thing?
+2. **Ship the owner first**, to its `main`.
+3. **Update the consumers** once the published artifact exists.
+4. For contract changes, open **all three PRs together**.
+
+</td>
+</tr>
+</table>
+
+```mermaid
+flowchart LR
+    O["1 · Owner repo<br/>ships change"] --> P["2 · Artifact published<br/>(contract, quiz.json, API)"] --> C["3 · Consumers<br/>adopt it"]
 ```
 
-### Why it matters for developers:
-- **`entity` Block** (Office owns; FlyGACA, Captain-Adel mirror): Legal facts (name, founder, tax ID, HQ), support channels, regulatory disclaimers. Edit only in Office; run `node tools/contracts/stamp-manifest.mjs` to re-hash.
-- **`chat` Block** (FlyGACA owns; Captain-Adel mirrors): The streaming SSE shape and citation schema both brains must honor. A breaking change here means both backends need updating in concert.
-- **`repos` Block** (Office owns): Canonical repository mapping and URLs.
-- **`iflygaca/ios` doesn't carry a copy of this file.** Only Office, FlyGACA and Captain-Adel do — the three-repo byte-identical set both `stamp-manifest.mjs` and each repo's own CLAUDE.md describe. Don't add a fourth copy without updating those too.
-
 ---
 
-## 🧠 Developer Workflows: Working Across the Family
+## 🤗 Hugging Face
 
-### The Independence Principle
-Each repo has its own domain, CI pipeline, and release cadence:
-- **Captain-Adel model tuning:** Changes only `src/brain/`, `evals/cases.json`; zero iOS or web touch.
-- **iOS study-pack content update:** FlyGACA publishes new `public/data/quiz.json`; iOS pulls it.
-- **FlyGACA UI refactor:** React changes live in `src/`; APIs stay stable via `server/`.
-- **Office compliance audit:** Policy docs in `01-governance/`.
+The [`@flygaca`](https://huggingface.co/flygaca) organisation mirrors parts of the Captain-Adel repository:
 
-### The Coordination Pattern
-When a feature spans multiple repositories:
-1. **Define the boundary:** Which repo owns the change? Which depends on it?
-2. **Update the owner first:** Ship the feature to that repo's `main`.
-3. **Consume from dependents:** Downstream repos read/pull the published artifact.
-
----
-
-## 🤗 Hugging Face Open AI Hub Synchronization
-
-All artificial intelligence assets under the [`@flygaca`](https://huggingface.co/flygaca) Hugging Face organization are synchronized directly with GitHub:
-
-| Hub Asset | Asset Type | Linked GitHub Source | Purpose & Status |
+| Hub asset | Type | Source in Captain-Adel | Status |
 | :--- | :--- | :--- | :--- |
-| **[flygaca/captain-adel](https://huggingface.co/spaces/flygaca/captain-adel)** | Interactive Space | `Captain-Adel/app.py` | Live Gradio 6 flight instructor space with 74 GACAR parts knowledge base |
-| **[flygaca/CaptAdel](https://huggingface.co/flygaca/CaptAdel)** | Embedding Model | `Captain-Adel/hf-phase-0/` | Bilingual GACAR embedding target with Matryoshka dimensions (256/512/1024) |
-| **[flygaca/gacar-assistant-evals](https://huggingface.co/datasets/flygaca/gacar-assistant-evals)** | Evaluation Dataset | `Captain-Adel/evals/` | 174 multi-turn evaluation cases with verified verbatim legal citations |
+| [`flygaca/captain-adel`](https://huggingface.co/spaces/flygaca/captain-adel) | Space (Gradio) | `app.py`, synced by `.github/workflows/huggingface-sync.yml` | Live |
+| [`flygaca/gacar-assistant-evals`](https://huggingface.co/datasets/flygaca/gacar-assistant-evals) | Dataset | `evals/gacar-assistant-evals.jsonl` | **150** bilingual regression cases |
+| [`flygaca/CaptAdel`](https://huggingface.co/flygaca/CaptAdel) | Model repo | `hf-phase-0/CaptAdel-model-README.md` | **In development.** No weights are published yet. |
 
 ---
 
-## 🇸🇦 Data Residency & Saudi PDPL Commitment
+## 🇸🇦 Data residency and PDPL
 
-- **Data Localization:** Production workloads and stateful data live in Google Cloud's Saudi Arabia region (`me-central2`, Dammam).
-- **Privacy by Default:** Zero learner profiling or biometric collection. Built toward compliance with the Saudi Personal Data Protection Law (PDPL).
-- **Bilingual Aviation Parity:** Authentic Arabic terminology aligned with official Saudi civil aviation standards.
+| Layer | Where it runs | Status |
+| :--- | :--- | :---: |
+| Web API, database, static assets, corpus buckets | Google Cloud `me-central2` (Dammam) | ✅ |
+| Captain Adel service | Cloud Run `me-central2`. `deploy/deploy.sh` hard-fails on any other region. | ✅ |
+| iOS study and search logic | On device | ✅ |
+| **Chat inference (English, default)** | Google Gemini API: a global endpoint with no Kingdom pinning | ⚠️ open |
+| **Chat inference (Arabic)** | ALLaM, in-Kingdom, **only when `ALLAM_BASE_URL` is configured** (off by default) | ⚠️ conditional |
 
 > [!WARNING]
-> **Open item, disclosed, not resolved.** Captain Adel's default English chat path calls
-> Google's Gemini API — a global endpoint with no Kingdom region pinning — so that traffic
-> leaves the Kingdom today. The Arabic path reaches an in-Kingdom model (ALLaM) only when
-> `ALLAM_BASE_URL` is configured, which is not the default. Storage and compute residency
-> above is accurate; **inference residency is not** — see `Captain-Adel/CLAUDE.md`. Don't
-> restate this as "100% in-Kingdom" until that gap is closed.
+> **Open item, disclosed rather than hidden.** Storage and compute are in the Kingdom.
+> **Inference is not, yet.** Don't describe the family as "100% in-Kingdom" until the Gemini path
+> is closed. `me-central1` is Doha, Qatar. It has never been a compliant fallback.
+
+Learner data is limited to name, email and progress. The family collects no passport, address,
+biometric or voice data.
 
 ---
 
-## 📜 Open Source & Community
+## 📜 Licensing
 
-Software components across the FlyGACA family are published under the **MIT License**. Business operations and governance documents in `Office` are proprietary to BDA Company International.
+| Repository | Licence |
+| :--- | :--- |
+| FlyGACA, iOS (`apps/flygaca-ios`), this repository | MIT |
+| Captain-Adel | Proprietary, all rights reserved |
+| Office | Apache 2.0 for Fly GACA's own material |
+
+GACAR text belongs to GACA wherever it is quoted. None of the licences above cover it.
+
+---
+
+<div dir="rtl">
+
+## 🇸🇦 عن المنظومة (بالعربية)
+
+**فلاي جاكا** منظومة تعليمية مستقلة للطيران المدني في المملكة العربية السعودية، تتكون من أربعة مستودعات:
+
+| المستودع | الدور |
+| :--- | :--- |
+| 🌐 **FlyGACA** | المنصة الرئيسية: مكتبة لوائح GACAR بأجزائها الـ 74، وأكثر من 55 أداة طيران، والمدرسة الأرضية |
+| 📱 **iOS** | تطبيقات آيفون أصلية: عائلة تطبيقات الدراسة، وتطبيق كابتن عادل الذي يعمل دون اتصال |
+| 🤖 **Captain-Adel** | مدرّب الطيران الذكي الذي يستشهد بنص المادة أو يمتنع عن الإجابة |
+| 🏢 **Office** | وثائق التشغيل: الحوكمة والمالية والامتثال والهوية البصرية |
+
+**موقع البيانات:** التخزين والحوسبة في منطقة `me-central2` (الدمام). أما استدلال المحادثة عبر Gemini فيتم خارج المملكة حاليًا. هذا بند مفتوح نعلنه ولا نخفيه.
+
+</div>
 
 ---
 
 <div align="center">
 
-**Built for Pilots · Grounded in Regulations · Powered by AI**
+**Built for pilots · Grounded in the regulations · Verified against GACA**
 
-[Website](https://flygaca.com) · [Captain Adel AI](https://captadel.com) · [Hugging Face Hub](https://huggingface.co/flygaca) · [Discussions](https://github.com/orgs/iflygaca/discussions)
+[flygaca.com](https://flygaca.com) · [captadel.com](https://captadel.com) · [Hugging Face](https://huggingface.co/flygaca) · Feedback: [i@flygaca.com](mailto:i@flygaca.com)
+
+</div>
+
+---
+
+<div align="center">
 
 <sub dir="rtl">🇸🇦 صنع في المملكة العربية السعودية</sub><br />
 <sub>Crafted with excellence in Saudi Arabia</sub>
