@@ -1,13 +1,24 @@
+<a id="flygaca-100-repository-wiki--integration-guide"></a>
+
 # FlyGACA 100-Repository Wiki & Integration Guide
+
+[Repository guide](../../README.md) · [Browse this directory](.)
+
+**Explore:** [What This Is](#what-this-is) · [Documents in This Wiki](#documents-in-this-wiki) · [Quick Start](#quick-start) · [By The Numbers](#by-the-numbers) · [Immediate Priority Repos (Q4 2026)](#immediate-priority-repos-q4-2026) · [Deployment Timeline](#deployment-timeline) · [Repo Integration Checklist](#repo-integration-checklist) · [Key Decision Points](#key-decision-points) · [Security & Compliance Considerations](#security--compliance-considerations) · [Contributing & Maintenance](#contributing--maintenance) · [File Structure in This Wiki](#file-structure-in-this-wiki) · [Questions & Support](#questions--support) · [Training & Onboarding](#training--onboarding) · [Quality Assurance](#quality-assurance) · [Commit Conventions](#commit-conventions) · [Next Steps](#next-steps) · [Related Documents](#related-documents)
 
 **Date Created:** 2026-09-11  
 **Designated Branch:** `claude/llm-wiki-categorization-wmdgta`  
 **Scope:** Family-wide (7 repositories)  
 **Audience:** Engineers, product managers, infrastructure team
 
+> [!NOTE]
+> This is an integration research plan. Suggested libraries, dates and migrations are proposals; the current implementation is defined by the source code and project manifests.
+
 ---
 
-## 📚 What This Is
+<a id="-what-this-is"></a>
+
+## What This Is
 
 This wiki documents **100 open-source repositories** selected for integration across the FlyGACA family. It provides:
 
@@ -20,7 +31,9 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 
 ---
 
-## 📖 Documents in This Wiki
+<a id="-documents-in-this-wiki"></a>
+
+## Documents in This Wiki
 
 | Document | Purpose | Audience | Read Time |
 |----------|---------|----------|-----------|
@@ -33,36 +46,55 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 
 ---
 
-## 🚀 Quick Start
+<a id="-quick-start"></a>
+
+## Quick Start
+
+<a id="for-product-managers"></a>
 
 ### For Product Managers
+
 1. Open `WIKI-100-REPOS-CATEGORIZATION.md` and scan the "Immediate Priority" section (17 quick-win repos)
 2. Skim the "Integration Roadmap" (5 phases over 12 months)
 3. Share timeline with engineering leads for sprint planning
 
+<a id="for-frontend-engineers"></a>
+
 ### For Frontend Engineers
+
 1. Read `INTEGRATION-GUIDE-FRONTEND.md` (45 minutes)
 2. Pick 2-3 repos from the Q4 2026 priorities to start with
 3. Create a feature branch and begin migration planning
 
+<a id="for-backenddevops-engineers"></a>
+
 ### For Backend/DevOps Engineers
+
 1. Read `INTEGRATION-GUIDE-BACKEND.md` (50 minutes)
 2. Focus on security hardening first (helmet, rate limiting, Zod validation)
 3. Plan Prisma ORM migration for the next sprint
 
+<a id="for-mobile-engineers"></a>
+
 ### For Mobile Engineers
+
 1. Read `INTEGRATION-GUIDE-MOBILE.md` (45 minutes)
 2. Evaluate The Composable Architecture (TCA) for FlyGACAKit
 3. Plan Alamofire integration for Captain Adel SSE client
 
+<a id="for-everyone"></a>
+
 ### For Everyone
+
 1. Browse `flygaca-100-repos-guide.html` in a web browser
 2. Search for specific keywords (e.g., "Arabic", "testing", "database")
 3. Filter by timeline phase to see what's relevant to your sprint
 
 ---
 
-## 📊 By The Numbers
+<a id="-by-the-numbers"></a>
+
+## By The Numbers
 
 | Metric | Count | Notes |
 |--------|-------|-------|
@@ -76,9 +108,14 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 
 ---
 
-## ⚡ Immediate Priority Repos (Q4 2026)
+<a id="-immediate-priority-repos-q4-2026"></a>
+
+## Immediate Priority Repos (Q4 2026)
+
+<a id="frontend-react-19"></a>
 
 ### Frontend (React 19)
+
 - **TanStack Router** — Modern type-safe routing
 - **TanStack Table** — Headless table library for progress views
 - **shadcn/ui** — Pre-built accessible components
@@ -86,7 +123,10 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 - **Zustand** — Lightweight state management
 - **SWR** — Data fetching + caching
 
+<a id="backend-express-5"></a>
+
 ### Backend (Express 5)
+
 - **helmet** — Security headers (CSP, HSTS, etc.)
 - **express-rate-limit** — Brute-force protection
 - **Prisma ORM** — Type-safe query builder
@@ -94,7 +134,10 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 - **Postgres** — Primary database
 - **Prometheus + Sentry** — Observability
 
+<a id="mobile-iosswift"></a>
+
 ### Mobile (iOS/Swift)
+
 - **The Composable Architecture (TCA)** — Testable state management
 - **Alamofire** — HTTP networking
 - **Socket.io-client-swift** — Real-time messaging
@@ -102,9 +145,14 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 
 ---
 
-## 📅 Deployment Timeline
+<a id="-deployment-timeline"></a>
+
+## Deployment Timeline
+
+<a id="phase-1-foundation-q4-2026"></a>
 
 ### Phase 1: Foundation (Q4 2026)
+
 **Goal:** Security and stability hardening.
 - Deploy helmet + rate limiting
 - Implement Zod validation on all endpoints
@@ -113,7 +161,10 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 
 **Repos:** 5-6 (security-focused)
 
+<a id="phase-2-learning--analytics-q1-q2-2027"></a>
+
 ### Phase 2: Learning & Analytics (Q1-Q2 2027)
+
 **Goal:** Enhanced learner progress tracking.
 - Migrate to Prisma ORM
 - Deploy xAPI logging (ADAPT platform)
@@ -122,7 +173,10 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 
 **Repos:** 6-8 (data pipeline)
 
+<a id="phase-3-multilingual-enhancements-q2-q3-2027"></a>
+
 ### Phase 3: Multilingual Enhancements (Q2-Q3 2027)
+
 **Goal:** Native-level Arabic support.
 - Migrate to Mozilla Fluent i18n
 - Deploy AraBERT for Arabic search
@@ -131,7 +185,10 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 
 **Repos:** 4-5 (Arabic/i18n)
 
+<a id="phase-4-real-time--collaboration-q3-q4-2027"></a>
+
 ### Phase 4: Real-Time & Collaboration (Q3-Q4 2027)
+
 **Goal:** Instructor multi-edit, learner sync.
 - Integrate Fluid Framework (CRDT collaboration)
 - Deploy Socket.io for real-time messaging
@@ -140,7 +197,10 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 
 **Repos:** 5-6 (real-time)
 
+<a id="phase-5-privacy--federated-learning-q4-2027--beyond"></a>
+
 ### Phase 5: Privacy & Federated Learning (Q4 2027 & beyond)
+
 **Goal:** PDPL-compliant model training.
 - Deploy PySyft for federated learning
 - Integrate SOPS for encrypted secrets
@@ -151,7 +211,9 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 
 ---
 
-## 🛠️ Repo Integration Checklist
+<a id="-repo-integration-checklist"></a>
+
+## Repo Integration Checklist
 
 Use this table to track which repos have been:
 - **Researched** (PR review, proof-of-concept)
@@ -169,33 +231,52 @@ Example format:
 
 ---
 
-## 🎯 Key Decision Points
+<a id="-key-decision-points"></a>
+
+## Key Decision Points
+
+<a id="1-monorepo-vs-multi-repo-structure"></a>
 
 ### 1. Monorepo vs. Multi-Repo Structure
+
 **Decision:** Keep current multi-repo (7 separate repositories) to avoid merge conflicts.
 **Impact on Repos:** Async dependencies (web must deploy before iOS can consume new corpus).
 
+<a id="2-orm-prisma-vs-drizzle"></a>
+
 ### 2. ORM: Prisma vs. Drizzle
+
 **Recommendation:** Start with Prisma (stronger ecosystem, more examples).
 **Fallback:** Drizzle if bundle size becomes critical.
 
+<a id="3-state-management-redux-vs-zustand-vs-tca"></a>
+
 ### 3. State Management: Redux vs. Zustand vs. TCA
+
 **Frontend:** Zustand (simpler, smaller)  
 **Mobile:** TCA (testable, composable)  
 **Backend:** None (Express services, no client state)
 
+<a id="4-i18n-i18next-vs-mozilla-fluent"></a>
+
 ### 4. i18n: i18next vs. Mozilla Fluent
+
 **Current:** i18next with ar.json manual dictionary  
 **Target:** Mozilla Fluent (better Arabic grammar rules, pluralization)  
 **Timeline:** Q2 2027 (not blocking initial work)
 
+<a id="5-airag-chroma-vs-weaviate-vs-pinecone"></a>
+
 ### 5. AI/RAG: Chroma vs. Weaviate vs. Pinecone
+
 **Recommendation:** Chroma (open-source, in-Kingdom inference via embeddings server)  
 **Constraint:** Must run in me-central2 (Dammam) for PDPL compliance
 
 ---
 
-## 🔐 Security & Compliance Considerations
+<a id="-security--compliance-considerations"></a>
+
+## Security & Compliance Considerations
 
 All 100 repos have been screened for:
 
@@ -208,7 +289,9 @@ All 100 repos have been screened for:
 
 ---
 
-## 🤝 Contributing & Maintenance
+<a id="-contributing--maintenance"></a>
+
+## Contributing & Maintenance
 
 To add or update repos in this wiki:
 
@@ -222,7 +305,9 @@ To add or update repos in this wiki:
 
 ---
 
-## 📂 File Structure in This Wiki
+<a id="-file-structure-in-this-wiki"></a>
+
+## File Structure in This Wiki
 
 ```
 claude/llm-wiki-categorization-wmdgta/
@@ -246,7 +331,9 @@ All files are committed to the designated branch across 7 repositories:
 
 ---
 
-## 📞 Questions & Support
+<a id="-questions--support"></a>
+
+## Questions & Support
 
 | Question | Where to Find Answer |
 |----------|---------------------|
@@ -259,7 +346,9 @@ All files are committed to the designated branch across 7 repositories:
 
 ---
 
-## 🎓 Training & Onboarding
+<a id="-training--onboarding"></a>
+
+## Training & Onboarding
 
 New engineers joining FlyGACA should:
 
@@ -272,7 +361,9 @@ New engineers joining FlyGACA should:
 
 ---
 
-## ✅ Quality Assurance
+<a id="-quality-assurance"></a>
+
+## Quality Assurance
 
 Every repo in this catalog has been vetted for:
 
@@ -285,7 +376,9 @@ Every repo in this catalog has been vetted for:
 
 ---
 
-## 📝 Commit Conventions
+<a id="-commit-conventions"></a>
+
+## Commit Conventions
 
 When working on this wiki:
 
@@ -306,7 +399,9 @@ Refs: WIKI-100-REPOS #1"
 
 ---
 
-## 🔄 Next Steps
+<a id="-next-steps"></a>
+
+## Next Steps
 
 1. **Product Leads:** Review Immediate Priority section, share timeline with team
 2. **Frontend Team:** Start with TanStack Router POC
@@ -322,7 +417,9 @@ Refs: WIKI-100-REPOS #1"
 
 ---
 
-## 📚 Related Documents
+<a id="-related-documents"></a>
+
+## Related Documents
 
 - **FlyGACA/CLAUDE.md** — Product stack conventions
 - **FlyGACA-ios/CLAUDE.md** — iOS app architecture

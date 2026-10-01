@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-labelledby="title description">
+<title id="title">The Fly GACA Family</title><desc id="description">A clear map of the web, native apps, AI and operations.</desc>
+<rect width="1200" height="300" rx="24" fill="#0B1820"/>
+<g fill="none" stroke="#29434B" stroke-width="1"><circle cx="1040" cy="150" r="108"/><circle cx="1040" cy="150" r="74"/><path d="M900 150h280M1040 10v280"/></g>
+<path d="M935 224L1012 160L1070 179L1140 78" fill="none" stroke="#A47D35" stroke-width="3"/>
+<g fill="#A47D35"><circle cx="935" cy="224" r="5"/><circle cx="1012" cy="160" r="5"/><circle cx="1070" cy="179" r="5"/><circle cx="1140" cy="78" r="5"/></g>
+<rect x="48" y="47" width="36" height="4" rx="2" fill="#A47D35"/>
+<text x="98" y="54" fill="#B7C8C6" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">ECOSYSTEM / DIRECTORY</text>
+<text x="48" y="145" fill="#F1F5F4" font-family="Arial,sans-serif" font-size="54" font-weight="700">The Fly GACA Family</text>
+<text x="48" y="193" fill="#B7C8C6" font-family="Arial,sans-serif" font-size="20">A clear map of the web, native apps, AI and operations.</text>
+<text x="48" y="260" fill="#B7C8C6" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">IFLYGACA / PROJECT DOCUMENTATION</text>
+</svg>

@@ -1,23 +1,17 @@
-<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/readme/banner-dark.svg">
+  <img alt="The Fly GACA Family: A clear map of the web, native apps, AI and operations." src=".github/readme/banner.svg" width="1200">
+</picture>
 
-# 🦅 **The Fly GACA Family**
-### One ecosystem for studying Saudi civil aviation: web, iOS, AI and operations
-#### منظومة فلاي جاكا · الويب · الآيفون · الذكاء الاصطناعي · العمليات
+<a id="the-fly-gaca-family"></a>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Made%20in-Saudi%20Arabia-006C35?style=for-the-badge&labelColor=0a0e12" alt="Made in Saudi Arabia" />
-  <img src="https://img.shields.io/badge/Bilingual-EN%20%E2%87%84%20AR-C8A04A?style=for-the-badge&labelColor=0a0e12" alt="Bilingual EN and AR" />
-  <img src="https://img.shields.io/badge/GACAR-74%20Parts-00e5ff?style=for-the-badge&labelColor=0a0e12" alt="74 GACAR Parts" />
-  <img src="https://img.shields.io/badge/Flight%20Tools-55%2B-FFD21E?style=for-the-badge&labelColor=0a0e12" alt="55+ flight tools" />
-  <img src="https://img.shields.io/badge/Hosting-me--central2%20Dammam-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white&labelColor=0a0e12" alt="Hosting in me-central2 Dammam" />
-  <a href="https://huggingface.co/flygaca"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-%40flygaca-FF9D00?style=for-the-badge&labelColor=0a0e12" alt="Hugging Face @flygaca" /></a>
-</p>
+# The Fly GACA Family
 
-[**🌐 flygaca.com**](https://flygaca.com) · [**🤖 captadel.com**](https://captadel.com) · [**📱 iOS**](https://github.com/iflygaca/ios) · [**🏢 Office**](https://github.com/iflygaca/Office) · [**🤗 Hugging Face**](https://huggingface.co/flygaca)
+A clear map of the web, native apps, AI and operations.
 
-</div>
+[FlyGACA](https://flygaca.com) · [Captain Adel](https://captadel.com) · [Family directory](https://github.com/iflygaca/FlyGACA-Family)
 
----
+**Explore:** [At a glance](#at-a-glance) · [The family map](#the-family-map) · [Repository roster](#repository-roster) · [How a learner moves through the family](#how-a-learner-moves-through-the-family) · [The family contract](#the-family-contract) · [Working across repositories](#working-across-repositories) · [Hugging Face](#hugging-face) · [Data residency and PDPL](#data-residency-and-pdpl) · [Licensing](#licensing) · [عن المنظومة (بالعربية)](#عن-المنظومة-بالعربية)
 
 > [!IMPORTANT]
 > **An independent educational ecosystem.** Fly GACA is not affiliated with, endorsed by, or
@@ -29,22 +23,12 @@
 
 ---
 
-## 📑 Contents
-
-- [At a glance](#-at-a-glance)
-- [The family map](#%EF%B8%8F-the-family-map)
-- [Repository roster](#-repository-roster)
-- [How a learner moves through the family](#-how-a-learner-moves-through-the-family)
-- [The family contract](#-the-family-contract)
-- [Working across repositories](#-working-across-repositories)
-- [Hugging Face](#-hugging-face)
-- [Data residency and PDPL](#-data-residency-and-pdpl)
-- [Licensing](#-licensing)
-- [عن المنظومة (بالعربية)](#-عن-المنظومة-بالعربية)
 
 ---
 
-## ⚡ At a glance
+<a id="-at-a-glance"></a>
+
+## At a glance
 
 | | |
 | :--- | :--- |
@@ -58,25 +42,27 @@
 
 ---
 
-## 🗺️ The family map
+<a id="-the-family-map"></a>
+
+## The family map
 
 ```mermaid
-flowchart LR
+flowchart TB
     subgraph Learners["👩‍✈️ Learners · instructors · schools"]
         U((Pilot))
     end
 
     subgraph Product["Product surfaces"]
-        WEB["🌐 <b>FlyGACA</b><br/>flygaca.com<br/><i>React 19 · Express 5</i>"]
-        IOS["📱 <b>iOS</b><br/>Study apps + Captain Adel iOS<br/><i>SwiftUI · FlyGACAKit</i>"]
-        ADEL["🤖 <b>Captain-Adel</b><br/>captadel.com<br/><i>Node · Express 5 · RAG</i>"]
+        WEB["🌐 FlyGACA · flygaca.com · React 19 · Express 5"]
+        IOS["📱 iOS · Study apps + Captain Adel iOS · SwiftUI · FlyGACAKit"]
+        ADEL["🤖 Captain-Adel · captadel.com · Node · Express 5 · RAG"]
     end
 
     subgraph Ops["Operations"]
-        OFFICE["🏢 <b>Office</b><br/>Governance · finance · compliance<br/><i>Markdown → branded PDF</i>"]
+        OFFICE["🏢 Office · Governance · finance · compliance · Markdown → branded PDF"]
     end
 
-    GACA[("📘 gaca.gov.sa<br/>official source")]
+    GACA[("📘 gaca.gov.sa · official source")]
 
     U --> WEB
     U --> IOS
@@ -84,26 +70,22 @@ flowchart LR
     WEB -- "quiz.json · packs" --> IOS
     WEB <-. "shared chat contract" .-> ADEL
     IOS -. "cloud-mode chat" .-> WEB
-    OFFICE -- "entity + roster<br/>(family contract)" --> WEB
+    OFFICE -- "entity + roster · (family contract)" --> WEB
     OFFICE -- "entity + roster" --> ADEL
     GACA -. "published regulations" .-> WEB
     GACA -. "published regulations" .-> ADEL
-
-    classDef web fill:#0b3b3a,stroke:#00b3a4,color:#fff;
-    classDef ios fill:#3a1d0b,stroke:#F05138,color:#fff;
-    classDef ai fill:#1d0b3a,stroke:#8E75B2,color:#fff;
-    classDef ops fill:#3a320b,stroke:#C8A04A,color:#fff;
-    class WEB web; class IOS ios; class ADEL ai; class OFFICE ops;
 ```
 
 ---
 
-## 🧭 Repository roster
+<a id="-repository-roster"></a>
+
+## Repository roster
 
 | | Repository | What it is | Stack | Licence |
 | :---: | :--- | :--- | :--- | :--- |
 | 🌐 | **[FlyGACA](https://github.com/iflygaca/FlyGACA)** | The product: the bilingual web app, its API, the GACAR library, 55+ flight tools and ground school | React 19 · Vite · TypeScript · CSS Modules · Express 5 · PostgreSQL · Cloud Run | MIT |
-| 📱 | **[iOS](https://github.com/iflygaca/ios)** | Native apps. `apps/flygaca-ios` is the `FlyGACAKit` study family; `apps/captain-adel-ios` is the offline GACAR co-pilot | Swift 5.9+ · SwiftUI · SPM · iOS 17+ | MIT (`flygaca-ios`) |
+| 📱 | **[iOS](https://github.com/iflygaca/iOS)** | Native apps. `apps/flygaca-ios` is the `FlyGACAKit` study family; `apps/captain-adel-ios` is the offline GACAR co-pilot | Swift 5.9+ · SwiftUI · SPM · iOS 17+ | MIT (`flygaca-ios`) |
 | 🤖 | **[Captain-Adel](https://github.com/iflygaca/Captain-Adel)** | The standalone AI flight instructor service behind captadel.com. FlyGACA's chat runs its own brain on the same `chat` contract. | Node 20+ · Express 5 · BM25 (+ optional dense/rerank) · Gemini / ALLaM | Proprietary |
 | 🏢 | **[Office](https://github.com/iflygaca/Office)** | Internal operating documents: strategy, governance, legal, finance, KSA compliance, people, brand | Markdown + HTML → A4 PDF (headless Chromium) | Apache 2.0 (own material) |
 
@@ -121,7 +103,9 @@ flowchart LR
 
 ---
 
-## 🧑‍✈️ How a learner moves through the family
+<a id="-how-a-learner-moves-through-the-family"></a>
+
+## How a learner moves through the family
 
 ```mermaid
 sequenceDiagram
@@ -148,17 +132,19 @@ sequenceDiagram
 
 ---
 
-## 🔗 The family contract
+<a id="-the-family-contract"></a>
+
+## The family contract
 
 `contracts/flygaca-family.json` is committed **byte-identically** to three repositories: Office,
 FlyGACA and Captain-Adel. Each block has exactly one owner, and only that owner edits it:
 
 ```mermaid
 flowchart TB
-    C{{"contracts/flygaca-family.json<br/>version · sha"}}
-    C --> E["<b>entity</b><br/>legal name · CR · VAT · address<br/><i>owner: Office</i>"]
-    C --> H["<b>chat</b><br/>request/response fields · tenants<br/><i>owner: FlyGACA</i>"]
-    C --> R["<b>repos</b><br/>the real roster<br/><i>owner: Office</i>"]
+    C{{"contracts/flygaca-family.json · version · sha"}}
+    C --> E["entity · legal name · CR · VAT · address · owner: Office"]
+    C --> H["chat · request/response fields · tenants · owner: FlyGACA"]
+    C --> R["repos · the real roster · owner: Office"]
 
     E --> G1["Office · tools/print/check-facts.mjs"]
     H --> G2["FlyGACA · tests/family-contract.test.ts"]
@@ -181,13 +167,18 @@ verbatim into the other two repos, and open all three PRs together.
 
 ---
 
-## 🧠 Working across repositories
+<a id="-working-across-repositories"></a>
+
+## Working across repositories
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
+<a id="independence-first"></a>
+
 ### Independence first
+
 Each repository has its own CI, its own release cadence and its own domain.
 
 - **Captain-Adel** retrieval or prompt work stays in `src/brain/` and `evals/`
@@ -198,7 +189,10 @@ Each repository has its own CI, its own release cadence and its own domain.
 </td>
 <td width="50%" valign="top">
 
+<a id="when-a-change-spans-repos"></a>
+
 ### When a change spans repos
+
 1. **Find the owner.** Which repo defines the thing?
 2. **Ship the owner first**, to its `main`.
 3. **Update the consumers** once the published artifact exists.
@@ -209,13 +203,15 @@ Each repository has its own CI, its own release cadence and its own domain.
 </table>
 
 ```mermaid
-flowchart LR
-    O["1 · Owner repo<br/>ships change"] --> P["2 · Artifact published<br/>(contract, quiz.json, API)"] --> C["3 · Consumers<br/>adopt it"]
+flowchart TB
+    O["1 · Owner repo · ships change"] --> P["2 · Artifact published · (contract, quiz.json, API)"] --> C["3 · Consumers · adopt it"]
 ```
 
 ---
 
-## 🤗 Hugging Face
+<a id="-hugging-face"></a>
+
+## Hugging Face
 
 The [`@flygaca`](https://huggingface.co/flygaca) organisation mirrors parts of the Captain-Adel repository:
 
@@ -227,7 +223,9 @@ The [`@flygaca`](https://huggingface.co/flygaca) organisation mirrors parts of t
 
 ---
 
-## 🇸🇦 Data residency and PDPL
+<a id="-data-residency-and-pdpl"></a>
+
+## Data residency and PDPL
 
 | Layer | Where it runs | Status |
 | :--- | :--- | :---: |
@@ -247,7 +245,9 @@ biometric or voice data.
 
 ---
 
-## 📜 Licensing
+<a id="-licensing"></a>
+
+## Licensing
 
 | Repository | Licence |
 | :--- | :--- |
@@ -261,7 +261,9 @@ GACAR text belongs to GACA wherever it is quoted. None of the licences above cov
 
 <div dir="rtl">
 
-## 🇸🇦 عن المنظومة (بالعربية)
+<a id="-عن-المنظومة-بالعربية"></a>
+
+## عن المنظومة (بالعربية)
 
 **فلاي جاكا** منظومة تعليمية مستقلة للطيران المدني في المملكة العربية السعودية، تتكون من أربعة مستودعات:
 
