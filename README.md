@@ -80,6 +80,21 @@ flowchart TB
 
 <a id="-repository-roster"></a>
 
+## Brand marks
+
+Every app shares one falcon mark. The upper wing stays blue and only the lower wing's gradient changes per app. The source, the full-size variants and the generator live in [`iflygaca/Office`](https://github.com/iflygaca/Office) (`11-brand/logos/` and `tools/brand/`); the copies here are for reference.
+
+| Mark | App | Lower wing |
+| --- | --- | --- |
+| <img src="brand/mark-flygaca.png" alt="FlyGACA" width="56"> | FlyGACA | Original green |
+| <img src="brand/mark-elpt.png" alt="ELPT" width="56"> | ELPT | Desert gold |
+| <img src="brand/mark-aip.png" alt="AIP" width="56"> | AIP | Terracotta |
+| <img src="brand/mark-ppl.png" alt="PPL" width="56"> | PPL | Soft indigo |
+| <img src="brand/mark-cpl.png" alt="CPL" width="56"> | CPL | Dusty rose |
+| <img src="brand/mark-ir.png" alt="IR" width="56"> | IR | Aqua teal |
+| <img src="brand/mark-atpl.png" alt="ATPL" width="56"> | ATPL | Platinum |
+| <img src="brand/mark-captain-adel.png" alt="Captain Adel" width="56"> | Captain Adel | Fresh lime |
+
 ## Repository roster
 
 | | Repository | What it is | Stack | Licence |
