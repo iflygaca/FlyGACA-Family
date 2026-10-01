@@ -1,7 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset=".github/readme/banner-dark.svg">
-  <img alt="The Fly GACA Family: A clear map of the web, native apps, AI and operations." src=".github/readme/banner.svg" width="1200">
-</picture>
+![The Fly GACA Family: A clear map of the web, native apps, AI and operations.](https://github.com/iflygaca/FlyGACA-Family/blob/main/.github/readme/banner.png?raw=true)
 
 <a id="the-fly-gaca-family"></a>
 
