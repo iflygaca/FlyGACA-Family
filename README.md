@@ -33,7 +33,7 @@ A clear map of the web, native apps, AI and operations.
 | **Operating company** | BDA Company International · شركة بدع الدولية (Riyadh) |
 | **Regulatory scope** | All **74** numbered GACAR Parts, plus topical handbooks, aerodromes and VFR charts |
 | **Doctrine** | Cite the exact section or refuse. Never invent a regulation. |
-| **Hosting** | Google Cloud `me-central2` (Dammam) only. Captain Adel's `deploy.sh` refuses any other region. |
+| **Hosting** | FlyGACA's web API and data deploy to Google Cloud `me-central2` (Dammam). Captain Adel is **unsettled**: it ships a Vercel deployment (`iad1`, United States) and a `deploy.sh` that defaults to `me-central2` but accepts other regions ([details](#-data-residency-and-pdpl)). |
 | **Languages** | English and Arabic, with right-to-left layout throughout |
 | **Open item** | Chat inference through Gemini runs outside the Kingdom ([details](#-data-residency-and-pdpl)) |
 
@@ -229,9 +229,9 @@ The [`@flygaca`](https://huggingface.co/flygaca) organisation mirrors parts of t
 
 | Hub asset | Type | Source in Captain-Adel | Status |
 | :--- | :--- | :--- | :--- |
-| [`flygaca/captain-adel`](https://huggingface.co/spaces/flygaca/captain-adel) | Space (Gradio) | `app.py`, synced by `.github/workflows/huggingface-sync.yml` | Live |
+| [`flygaca/captain-adel`](https://huggingface.co/spaces/flygaca/captain-adel) | Space (Gradio) | `huggingface/space/app.py`, synced by `.github/workflows/huggingface-sync.yml` | Live |
 | [`flygaca/gacar-assistant-evals`](https://huggingface.co/datasets/flygaca/gacar-assistant-evals) | Dataset | `evals/gacar-assistant-evals.jsonl` | **150** bilingual regression cases |
-| [`flygaca/CaptAdel`](https://huggingface.co/flygaca/CaptAdel) | Model repo | `hf-phase-0/CaptAdel-model-README.md` | **In development.** No weights are published yet. |
+| [`flygaca/CaptAdel`](https://huggingface.co/flygaca/CaptAdel) | Model repo | `huggingface/model-card.md` | **In development.** No weights are published yet. |
 
 ---
 
@@ -242,14 +242,14 @@ The [`@flygaca`](https://huggingface.co/flygaca) organisation mirrors parts of t
 | Layer | Where it runs | Status |
 | :--- | :--- | :---: |
 | Web API, database, static assets, corpus buckets | Google Cloud `me-central2` (Dammam) | ✅ |
-| Captain Adel service | Cloud Run `me-central2`. `deploy/deploy.sh` hard-fails on any other region. | ✅ |
+| Captain Adel service | Vercel `iad1` (US) is the primary release path; optional Cloud Run via `deploy/deploy.sh`, default `me-central2`, other regions accepted. The in-Kingdom-only rule in its `CLAUDE.md` is not enforced in code. | ⚠️ open |
 | iOS study and search logic | On device | ✅ |
 | **Chat inference (English, default)** | Google Gemini API: a global endpoint with no Kingdom pinning | ⚠️ open |
-| **Chat inference (Arabic)** | ALLaM, in-Kingdom, **only when `ALLAM_BASE_URL` is configured** (off by default) | ⚠️ conditional |
+| **Chat inference (Arabic)** | ALLaM, **only when `ALLAM_BASE_URL` is configured** (off by default); its location depends on where that endpoint is deployed | ⚠️ conditional |
 
 > [!WARNING]
-> **Open item, disclosed rather than hidden.** Storage and compute are in the Kingdom.
-> **Inference is not, yet.** Don't describe the family as "100% in-Kingdom" until the Gemini path
+> **Open item, disclosed rather than hidden.** FlyGACA's API and data target the Kingdom; Captain Adel's
+> hosting region is unsettled (see the table). **Inference is not in the Kingdom, yet.** Don't describe the family as "100% in-Kingdom" until the Gemini path
 > is closed. `me-central1` is Doha, Qatar. It has never been a compliant fallback.
 
 Learner data is limited to name, email and progress. The family collects no passport, address,
@@ -286,7 +286,7 @@ GACAR text belongs to GACA wherever it is quoted. None of the licences above cov
 | 🤖 **Captain-Adel** | مدرّب الطيران الذكي الذي يستشهد بنص المادة أو يمتنع عن الإجابة |
 | 🏢 **Office** | وثائق التشغيل: الحوكمة والمالية والامتثال والهوية البصرية |
 
-**موقع البيانات:** التخزين والحوسبة في منطقة `me-central2` (الدمام). أما استدلال المحادثة عبر Gemini فيتم خارج المملكة حاليًا. هذا بند مفتوح نعلنه ولا نخفيه.
+**موقع البيانات:** تستهدف واجهة FlyGACA وبياناتها منطقة `me-central2` (الدمام)، أما منطقة استضافة كابتن عادل فلم تُحسم بعد. واستدلال المحادثة عبر Gemini يتم خارج المملكة حاليًا. هذا بند مفتوح نعلنه ولا نخفيه.
 
 </div>
 
