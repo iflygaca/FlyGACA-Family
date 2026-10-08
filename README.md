@@ -33,7 +33,7 @@ A clear map of the web, native apps, AI and operations.
 | **Operating company** | BDA Company International · شركة بدع الدولية (Riyadh) |
 | **Regulatory scope** | All **74** numbered GACAR Parts, plus topical handbooks, aerodromes and VFR charts |
 | **Doctrine** | Cite the exact section or refuse. Never invent a regulation. |
-| **Hosting** | **FlyGACA:** Google Cloud `me-central2` (Dammam). **Captain Adel:** global hosting, owner-approved 2026-10-04; served from Vercel (`iad1`), with Cloud Run as an optional manual path. The family is not Saudi-only. |
+| **Hosting** | **FlyGACA:** Google Cloud `me-central2` (Dammam). **Captain Adel:** global hosting, owner-approved 2026-10-04; Vercel `iad1` (United States) is the primary path, with Cloud Run as an optional manual path. The family is not Saudi-only. |
 | **Languages** | English and Arabic, with right-to-left layout throughout |
 | **Open item** | Captain Adel compute and chat inference through Gemini run outside the Kingdom ([details](#-data-residency-and-pdpl)) |
 
@@ -242,10 +242,10 @@ The [`@flygaca`](https://huggingface.co/flygaca) organisation mirrors parts of t
 | Layer | Where it runs | Status |
 | :--- | :--- | :---: |
 | Web API, database, static assets, corpus buckets | Google Cloud `me-central2` (Dammam) | ✅ |
-| Captain Adel service | Vercel `iad1` (United States). Optional Cloud Run path via `deploy/deploy.sh`, default `me-central2`, other supported regions allowed. Connected Supabase projects are in `us-east-1`. | ⚠️ outside the Kingdom |
+| Captain Adel service | Vercel `iad1` (US) is the primary release path; optional Cloud Run via `deploy/deploy.sh`, default `me-central2`, other regions accepted. Connected Supabase projects are in `us-east-1`; the in-Kingdom-only rule in its `CLAUDE.md` is not enforced in code. | ⚠️ outside the Kingdom |
 | iOS study and search logic | On device | ✅ |
 | **Chat inference (English, default)** | Google Gemini API: a global endpoint with no Kingdom pinning | ⚠️ open |
-| **Chat inference (Arabic)** | ALLaM, in-Kingdom, **only when `ALLAM_BASE_URL` is configured** (off by default) | ⚠️ conditional |
+| **Chat inference (Arabic)** | ALLaM, **only when `ALLAM_BASE_URL` is configured** (off by default); its location depends on where that endpoint is deployed | ⚠️ conditional |
 
 > [!WARNING]
 > **Disclosed rather than hidden.** FlyGACA's storage and compute are in the Kingdom. Captain Adel's
