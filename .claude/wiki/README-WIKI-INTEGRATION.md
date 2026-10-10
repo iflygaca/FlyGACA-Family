@@ -1,10 +1,10 @@
 <a id="flygaca-100-repository-wiki--integration-guide"></a>
 
+<a id="flygaca-100-repository-wiki-integration-guide"></a>
+
 # FlyGACA 100-Repository Wiki & Integration Guide
 
-[Repository guide](../../README.md) · [Browse this directory](.)
-
-**Explore:** [What This Is](#what-this-is) · [Documents in This Wiki](#documents-in-this-wiki) · [Quick Start](#quick-start) · [By The Numbers](#by-the-numbers) · [Immediate Priority Repos (Q4 2026)](#immediate-priority-repos-q4-2026) · [Deployment Timeline](#deployment-timeline) · [Repo Integration Checklist](#repo-integration-checklist) · [Key Decision Points](#key-decision-points) · [Security & Compliance Considerations](#security--compliance-considerations) · [Contributing & Maintenance](#contributing--maintenance) · [File Structure in This Wiki](#file-structure-in-this-wiki) · [Questions & Support](#questions--support) · [Training & Onboarding](#training--onboarding) · [Quality Assurance](#quality-assurance) · [Commit Conventions](#commit-conventions) · [Next Steps](#next-steps) · [Related Documents](#related-documents)
+[Project guide](../../README.md) · [Browse source](.)
 
 **Date Created:** 2026-09-11  
 **Designated Branch:** `claude/llm-wiki-categorization-wmdgta`  
@@ -17,6 +17,45 @@
 ---
 
 <a id="-what-this-is"></a>
+
+<a id="directory-guide"></a>
+
+<details>
+<summary>On this page</summary>
+
+- [Directory guide](#directory-guide)
+- [What This Is](#what-this-is)
+- [Documents in This Wiki](#documents-in-this-wiki)
+- [Quick Start](#quick-start)
+- [By The Numbers](#by-the-numbers)
+- [Immediate Priority Repos (Q4 2026)](#immediate-priority-repos-q4-2026)
+- [Deployment Timeline](#deployment-timeline)
+- [Repo Integration Checklist](#repo-integration-checklist)
+- [Key Decision Points](#key-decision-points)
+- [Security & Compliance Considerations](#security-compliance-considerations)
+- [Contributing & Maintenance](#contributing-maintenance)
+- [File Structure in This Wiki](#file-structure-in-this-wiki)
+- [Questions & Support](#questions-support)
+- [Training & Onboarding](#training-onboarding)
+- [Quality Assurance](#quality-assurance)
+- [Commit Conventions](#commit-conventions)
+- [Next Steps](#next-steps)
+- [Related Documents](#related-documents)
+
+</details>
+
+## Directory guide
+
+| Entry | Kind |
+| --- | --- |
+| [IMPLEMENTATION-ROADMAP-2027.md](IMPLEMENTATION-ROADMAP-2027.md) | Versioned file |
+| [INTEGRATION-GUIDE-BACKEND.md](INTEGRATION-GUIDE-BACKEND.md) | Versioned file |
+| [INTEGRATION-GUIDE-FRONTEND.md](INTEGRATION-GUIDE-FRONTEND.md) | Versioned file |
+| [INTEGRATION-GUIDE-MOBILE.md](INTEGRATION-GUIDE-MOBILE.md) | Versioned file |
+| [SPRINT-1-STAGING-SETUP.md](SPRINT-1-STAGING-SETUP.md) | Versioned file |
+| [WIKI-100-REPOS-CATEGORIZATION.md](WIKI-100-REPOS-CATEGORIZATION.md) | Versioned file |
+
+<a id="what-this-is"></a>
 
 ## What This Is
 
@@ -33,6 +72,8 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 
 <a id="-documents-in-this-wiki"></a>
 
+<a id="documents-in-this-wiki"></a>
+
 ## Documents in This Wiki
 
 | Document | Purpose | Audience | Read Time |
@@ -47,6 +88,8 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 ---
 
 <a id="-quick-start"></a>
+
+<a id="quick-start"></a>
 
 ## Quick Start
 
@@ -94,6 +137,8 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 
 <a id="-by-the-numbers"></a>
 
+<a id="by-the-numbers"></a>
+
 ## By The Numbers
 
 | Metric | Count | Notes |
@@ -109,6 +154,8 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 ---
 
 <a id="-immediate-priority-repos-q4-2026"></a>
+
+<a id="immediate-priority-repos-q4-2026"></a>
 
 ## Immediate Priority Repos (Q4 2026)
 
@@ -147,6 +194,8 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 
 <a id="-deployment-timeline"></a>
 
+<a id="deployment-timeline"></a>
+
 ## Deployment Timeline
 
 <a id="phase-1-foundation-q4-2026"></a>
@@ -162,6 +211,8 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 **Repos:** 5-6 (security-focused)
 
 <a id="phase-2-learning--analytics-q1-q2-2027"></a>
+
+<a id="phase-2-learning-analytics-q1-q2-2027"></a>
 
 ### Phase 2: Learning & Analytics (Q1-Q2 2027)
 
@@ -187,6 +238,8 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 
 <a id="phase-4-real-time--collaboration-q3-q4-2027"></a>
 
+<a id="phase-4-real-time-collaboration-q3-q4-2027"></a>
+
 ### Phase 4: Real-Time & Collaboration (Q3-Q4 2027)
 
 **Goal:** Instructor multi-edit, learner sync.
@@ -198,6 +251,8 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 **Repos:** 5-6 (real-time)
 
 <a id="phase-5-privacy--federated-learning-q4-2027--beyond"></a>
+
+<a id="phase-5-privacy-federated-learning-q4-2027-beyond"></a>
 
 ### Phase 5: Privacy & Federated Learning (Q4 2027 & beyond)
 
@@ -212,6 +267,8 @@ The goal: accelerate FlyGACA's development by curating battle-tested open-source
 ---
 
 <a id="-repo-integration-checklist"></a>
+
+<a id="repo-integration-checklist"></a>
 
 ## Repo Integration Checklist
 
@@ -232,6 +289,8 @@ Example format:
 ---
 
 <a id="-key-decision-points"></a>
+
+<a id="key-decision-points"></a>
 
 ## Key Decision Points
 
@@ -276,6 +335,8 @@ Example format:
 
 <a id="-security--compliance-considerations"></a>
 
+<a id="security-compliance-considerations"></a>
+
 ## Security & Compliance Considerations
 
 All 100 repos have been screened for:
@@ -290,6 +351,8 @@ All 100 repos have been screened for:
 ---
 
 <a id="-contributing--maintenance"></a>
+
+<a id="contributing-maintenance"></a>
 
 ## Contributing & Maintenance
 
@@ -306,6 +369,8 @@ To add or update repos in this wiki:
 ---
 
 <a id="-file-structure-in-this-wiki"></a>
+
+<a id="file-structure-in-this-wiki"></a>
 
 ## File Structure in This Wiki
 
@@ -333,6 +398,8 @@ All files are committed to the designated branch across 7 repositories:
 
 <a id="-questions--support"></a>
 
+<a id="questions-support"></a>
+
 ## Questions & Support
 
 | Question | Where to Find Answer |
@@ -347,6 +414,8 @@ All files are committed to the designated branch across 7 repositories:
 ---
 
 <a id="-training--onboarding"></a>
+
+<a id="training-onboarding"></a>
 
 ## Training & Onboarding
 
@@ -363,6 +432,8 @@ New engineers joining FlyGACA should:
 
 <a id="-quality-assurance"></a>
 
+<a id="quality-assurance"></a>
+
 ## Quality Assurance
 
 Every repo in this catalog has been vetted for:
@@ -377,6 +448,8 @@ Every repo in this catalog has been vetted for:
 ---
 
 <a id="-commit-conventions"></a>
+
+<a id="commit-conventions"></a>
 
 ## Commit Conventions
 
@@ -401,6 +474,8 @@ Refs: WIKI-100-REPOS #1"
 
 <a id="-next-steps"></a>
 
+<a id="next-steps"></a>
+
 ## Next Steps
 
 1. **Product Leads:** Review Immediate Priority section, share timeline with team
@@ -418,6 +493,8 @@ Refs: WIKI-100-REPOS #1"
 ---
 
 <a id="-related-documents"></a>
+
+<a id="related-documents"></a>
 
 ## Related Documents
 
