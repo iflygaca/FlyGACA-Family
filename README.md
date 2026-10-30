@@ -1,3 +1,7 @@
+<div align="center">
+  <img src=".github/readme/hero.png" alt="Fly GACA ecosystem: a network of learning, study, support and planning icons above a coastal runway at sunset" width="560">
+</div>
+
 ![The Fly GACA Family](.github/readme/banner.png)
 
 
@@ -24,6 +28,7 @@ The public directory for Fly GACA's aviation learning ecosystem. Start with the 
 <summary>On this page</summary>
 
 - [Choose your destination](#choose-your-destination)
+- [Ecosystem at a glance](#ecosystem-at-a-glance)
 - [How the pieces connect](#how-the-pieces-connect)
 - [Source-of-truth rules](#source-of-truth-rules)
 - [Brand marks](#brand-marks)
@@ -60,6 +65,17 @@ flowchart LR
 | Authorized operators | [Office](https://github.com/iflygaca/Office) | Internal strategy, governance and operating documents |
 
 Some repositories are private. A link in this directory does not grant access.
+
+<a id="ecosystem-at-a-glance"></a>
+
+## Ecosystem at a glance
+
+| Surface | Domain | Repository | What it covers |
+| --- | --- | --- | --- |
+| FlyGACA web | [flygaca.com](https://flygaca.com) | [FlyGACA](https://github.com/iflygaca/FlyGACA) | Regulatory reference, study and flight tools |
+| Captain Adel | [captadel.com](https://captadel.com) | [Captain-Adel](https://github.com/iflygaca/Captain-Adel) | Bilingual explanations with source evidence |
+| Native apps | — | [iOS](https://github.com/iflygaca/iOS) | SwiftUI study apps and the separate Captain Adel app |
+| Office | — | [Office](https://github.com/iflygaca/Office) | Internal strategy, governance and operating documents |
 
 <a id="how-the-pieces-connect"></a>
 
@@ -104,6 +120,24 @@ Every app shares one falcon mark. The upper wing stays blue and only the lower w
 | <img src="brand/mark-ir.png" alt="IR" width="56"> | IR | Aqua teal |
 | <img src="brand/mark-atpl.png" alt="ATPL" width="56"> | ATPL | Platinum |
 | <img src="brand/mark-captain-adel.png" alt="Captain Adel" width="56"> | Captain Adel | Fresh lime |
+
+The marks connect to their public surfaces and repositories; Office owns the shared contract:
+
+```mermaid
+flowchart LR
+    Brand["Falcon mark"] --> WebMark["FlyGACA: original green"]
+    Brand --> AdelMark["Captain Adel: fresh lime"]
+    Brand --> StudyMarks["ELPT, AIP, PPL, CPL, IR, ATPL"]
+    WebMark --> WebSite["flygaca.com"]
+    AdelMark --> AdelSite["captadel.com"]
+    StudyMarks --> IOSRepo["iflygaca/iOS"]
+    WebSite --> WebRepo["iflygaca/FlyGACA"]
+    AdelSite --> AdelRepo["iflygaca/Captain-Adel"]
+    WebRepo --> Contract["Family contract"]
+    AdelRepo --> Contract
+    Contract --> OfficeRepo["iflygaca/Office"]
+```
+
 <a id="hugging-face"></a>
 
 ## Hugging Face
