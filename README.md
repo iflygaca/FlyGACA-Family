@@ -1,19 +1,6 @@
 ![The Fly GACA Family](.github/readme/banner.png)
 
 
-## Where a change belongs
-
-```mermaid
-flowchart LR
-    Content["Regulatory content"] --> Web["FlyGACA web"]
-    Content --> Apps["iOS apps"]
-    Service["Chat behavior"] --> Adel["Captain Adel"]
-    Policy["Company facts and decisions"] --> Office["Office"]
-    Office --> Contract["Shared family contract"]
-    Contract --> Web
-    Contract --> Adel
-```
-
 <a id="the-fly-gaca-family"></a>
 
 # The Fly GACA Family
@@ -47,6 +34,19 @@ The public directory for Fly GACA's aviation learning ecosystem. Start with the 
 - [Keep this guide healthy](#keep-this-guide-healthy)
 
 </details>
+
+## Where a change belongs
+
+```mermaid
+flowchart LR
+    Content["Regulatory content"] --> Web["FlyGACA web"]
+    Content --> Apps["iOS apps"]
+    Service["Chat behavior"] --> Adel["Captain Adel"]
+    Policy["Company facts and decisions"] --> Office["Office"]
+    Office --> Contract["Shared family contract"]
+    Contract --> Web
+    Contract --> Adel
+```
 
 ## Choose your destination
 
